@@ -295,7 +295,7 @@ test("debug.getstack", {}, function()
 end)
 
 test("debug.getupvalue", {}, function()
-	return print(" ")
+	return ""
 end)
 
 test("debug.getupvalues", {}, function()
@@ -434,7 +434,7 @@ test("fireclickdetector", {}, function()
 end)
 
 test("getcallbackvalue", {}, function()
-	print(" ")
+	return
 end)
 
 test("getconnections", {}, function()
@@ -504,7 +504,7 @@ test("hookmetamethod", {}, function()
 end)
 
 test("getnamecallmethod", {}, function()
-	return ""
+	print(" ")
 end)
 
 test("isreadonly", {}, function()
@@ -524,7 +524,9 @@ end)
 -- Miscellaneous
 
 test("identifyexecutor", {"getexecutorname"}, function()
-	return print(identifyexecutor())
+		local name, version = identifyexecutor()
+		assert(type(name) == "string", "Did not return a string for the name")
+		return type(version) == "string" and "Returns version as a string" or "Does not return version"
 end)
 
 test("lz4compress", {}, function()
