@@ -295,7 +295,7 @@ test("debug.getstack", {}, function()
 end)
 
 test("debug.getupvalue", {}, function()
-	return
+	return print(" ")
 end)
 
 test("debug.getupvalues", {}, function()
@@ -504,7 +504,7 @@ test("hookmetamethod", {}, function()
 end)
 
 test("getnamecallmethod", {}, function()
-	print(" ")
+	return ""
 end)
 
 test("isreadonly", {}, function()
@@ -524,7 +524,7 @@ end)
 -- Miscellaneous
 
 test("identifyexecutor", {"getexecutorname"}, function()
-	print(identifyexecutor())
+	return print(identifyexecutor())
 end)
 
 test("lz4compress", {}, function()
