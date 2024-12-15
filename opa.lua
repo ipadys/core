@@ -295,7 +295,7 @@ test("debug.getstack", {}, function()
 end)
 
 test("debug.getupvalue", {}, function()
-	return ""
+	return
 end)
 
 test("debug.getupvalues", {}, function()
