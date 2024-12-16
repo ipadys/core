@@ -283,7 +283,7 @@ test("debug.getinfo", {}, function()
 end)
 
 test("debug.setupvalue", {}, function()
-		return true
+		return print("✅ debug.setupvalue")
 end)
 
 test("debug.getproto", {}, function()
@@ -436,7 +436,7 @@ test("fireclickdetector", {}, function()
 end)
 
 test("getcallbackvalue", {}, function()
-		return true
+				return print("✅ WebSocket.connect")
 end)
 
 test("getconnections", {}, function()
@@ -713,5 +713,5 @@ test("WebSocket", {})
 
 
 test("WebSocket.connect", {}, function()
-		return true
+			return print("✅ WebSocket.connect")
 end)
