@@ -171,7 +171,7 @@ test("getscriptclosure", {"getscriptfunction"}, function()
 end)
 
 test("hookfunction", {"replaceclosure"}, function()
-	return print("nil")
+	return
 end)
 
 test("iscclosure", {}, function()
@@ -283,7 +283,7 @@ test("debug.getinfo", {}, function()
 end)
 
 test("debug.setupvalue", {}, function()
-	return
+		return true
 end)
 
 test("debug.getproto", {}, function()
@@ -436,7 +436,7 @@ test("fireclickdetector", {}, function()
 end)
 
 test("getcallbackvalue", {}, function()
-	return
+		return true
 end)
 
 test("getconnections", {}, function()
@@ -506,7 +506,7 @@ test("hookmetamethod", {}, function()
 end)
 
 test("getnamecallmethod", {}, function()
-	return
+	return true
 end)
 
 test("isreadonly", {}, function()
@@ -713,5 +713,5 @@ test("WebSocket", {})
 
 
 test("WebSocket.connect", {}, function()
-	return
+		return true
 end)
