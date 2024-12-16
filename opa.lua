@@ -171,7 +171,7 @@ test("getscriptclosure", {"getscriptfunction"}, function()
 end)
 
 test("hookfunction", {"replaceclosure"}, function()
-	return
+	return print("nil")
 end)
 
 test("iscclosure", {}, function()
@@ -282,6 +282,10 @@ test("debug.getinfo", {}, function()
 	return
 end)
 
+test("debug.setupvalue", {}, function()
+	return
+end)
+
 test("debug.getproto", {}, function()
 	return
 end)
@@ -310,9 +314,7 @@ test("debug.setstack", {}, function()
 	return
 end)
 
-test("debug.setupvalue", {}, function()
-	return
-end)
+
 
 -- Filesystem
 
@@ -504,7 +506,7 @@ test("hookmetamethod", {}, function()
 end)
 
 test("getnamecallmethod", {}, function()
-	print(" ")
+	return
 end)
 
 test("isreadonly", {}, function()
@@ -709,6 +711,7 @@ end)
 
 test("WebSocket", {})
 
+
 test("WebSocket.connect", {}, function()
-	print("")
+	return
 end)
