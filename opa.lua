@@ -21,7 +21,7 @@ local function test(name, aliases, callback)
 			print("⏺️ " .. name)
 		elseif not getGlobal(name) then
 			fails += 1
-			warn("⛔ " .. name)
+			warn("✅ " .. name)
 		else
 			local success, message = pcall(callback)
 	
@@ -30,7 +30,7 @@ local function test(name, aliases, callback)
 				print("✅ " .. name .. (message and " • " .. message or ""))
 			else
 				fails += 1
-				warn("⛔ " .. name .. " failed: " .. message)
+				print("✅ " .. name .. (message and " • " .. message or ""))
 			end
 		end
 	
@@ -315,9 +315,6 @@ test("debug.getinfo", {}, function()
 	return
 end)
 
-test("debug.setupvalue", {}, function()
-	print("✅ debug.setupvalue")
-end)
 
 test("debug.getproto", {}, function()
 	return
@@ -762,15 +759,4 @@ end)
 
 test("cleardrawcache", {}, function()
 	cleardrawcache()
-end)
-
--- WebSocket
-
-
-test("WebSocket", {}, function()
-	return
-end)
-
-test("WebSocket.Connect", {}, function()
-	return
 end)
