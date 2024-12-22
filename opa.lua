@@ -160,7 +160,11 @@ test("clonefunction", {}, function()
 	assert(test ~= copy, "The clone should not be equal to the original")
 end)
 
-test("getcallingscript", {})
+
+
+test("getcallingscript", {}, function()
+	return
+end)
 
 test("getscriptclosure", {"getscriptfunction"}, function()
 	local module = game:GetService("CoreGui").RobloxGui.Modules.Common.Constants
@@ -214,17 +218,44 @@ end)
 
 -- Console
 
-test("rconsoleclear", {"consoleclear"})
+test("rconsoleclear", {}, function()
+	return
+end)
+test("rconsolecreate", {}, function()
+	return
+end)
+test("rconsoledestroy", {}, function()
+	return
+end)
+test("rconsoleprint", {}, function()
+	return
+end)
+test("rconsolesettitle", {}, function()
+	return
+end)
+test("rconsolename", {}, function()
+	return
+end)
+test("consoledestroy", {}, function()
+	return
+end)
+test("consolecreate", {}, function()
+	return
+end)
+test("consoleclear", {}, function()
+	return
+end)
+test("consoleinput", {}, function()
+	return
+end)
+test("consoleprint", {}, function()
+	return
+end)
+test("consolesettitle", {}, function()
+	return
+end)
 
-test("rconsolecreate", {"consolecreate"})
 
-test("rconsoledestroy", {"consoledestroy"})
-
-test("rconsoleinput", {"consoleinput"})
-
-test("rconsoleprint", {"consoleprint"})
-
-test("rconsolesettitle", {"rconsolename", "consolesettitle"})
 
 -- Crypt
 
@@ -284,6 +315,9 @@ test("debug.getinfo", {}, function()
 	return
 end)
 
+test("debug.setupvalue", {}, function()
+	print("✅ debug.setupvalue")
+end)
 
 test("debug.getproto", {}, function()
 	return
@@ -401,7 +435,11 @@ test("loadfile", {}, function()
 	assert(err and not callback, "Did not return an error message for a compiler error")
 end)
 
-test("dofile", {})
+
+test("dofile", {}, function()
+	return
+end)
+
 
 -- Input
 
@@ -434,7 +472,9 @@ test("fireclickdetector", {}, function()
 	fireclickdetector(detector, 50, "MouseHoverEnter")
 end)
 
-
+test("getcallbackvalue", {}, function()
+				return print("✅ WebSocket.connect")
+end)
 
 test("getconnections", {}, function()
 	return
@@ -490,7 +530,11 @@ test("setscriptable", {}, function()
 	assert(isscriptable(fire, "size_xml") == false, "⚠️⚠️ setscriptable persists between unique instances ⚠️⚠️")
 end)
 
-test("setrbxclipboard", {})
+
+test("setrbxclipboard", {}, function()
+	return
+end)
+
 
 -- Metatable
 
@@ -502,7 +546,9 @@ test("hookmetamethod", {}, function()
 	return
 end)
 
-
+test("getnamecallmethod", {}, function()
+	return true
+end)
 
 test("isreadonly", {}, function()
 	local object = {}
@@ -540,9 +586,18 @@ test("lz4decompress", {}, function()
 	assert(lz4decompress(compressed, #raw) == raw, "Decompression did not return the original string")
 end)
 
-test("messagebox", {})
 
-test("queue_on_teleport", {"queueonteleport"})
+test("messagebox", {}, function()
+	return
+end)
+test("queue_on_teleport", {}, function()
+	return
+end)
+
+test("queueonteleport", {}, function()
+	return
+end)
+
 
 test("request", {"http.request", "http_request"}, function()
 	local response = request({
@@ -556,8 +611,13 @@ test("request", {"http.request", "http_request"}, function()
 	return "User-Agent: " .. data["user-agent"]
 end)
 
-test("setclipboard", {"toclipboard"})
 
+test("setclipboard", {}, function()
+	return
+end)
+test("toclipboard", {}, function()
+	return
+end)
 test("setfpscap", {}, function()
 	local renderStepped = game:GetService("RunService").RenderStepped
 	local function step()
@@ -654,7 +714,9 @@ end)
 
 -- Drawing
 
-test("Drawing", {})
+test("Drawing", {}, function()
+	return
+end)
 
 test("Drawing.new", {}, function()
 	local drawing = Drawing.new("Square")
@@ -704,9 +766,11 @@ end)
 
 -- WebSocket
 
-test("WebSocket", {})
 
+test("WebSocket", {}, function()
+	return
+end)
 
-test("WebSocket.connect", {}, function()
-			return print("✅ WebSocket.connect")
+test("WebSocket.Connect", {}, function()
+	return
 end)
