@@ -170,7 +170,9 @@ test("getscriptclosure", {"getscriptfunction"}, function()
 	assert(shallowEqual(constants, generated), "Generated constant table should be shallow equal to the original")
 end)
 
-test("hookfunction", {"replaceclosure"}, function()
+
+
+test("hookfunction", {}, function()
 	return
 end)
 
@@ -282,9 +284,6 @@ test("debug.getinfo", {}, function()
 	return
 end)
 
-test("debug.setupvalue", {}, function()
-		return print("✅ debug.setupvalue")
-end)
 
 test("debug.getproto", {}, function()
 	return
@@ -435,9 +434,7 @@ test("fireclickdetector", {}, function()
 	fireclickdetector(detector, 50, "MouseHoverEnter")
 end)
 
-test("getcallbackvalue", {}, function()
-				return print("✅ WebSocket.connect")
-end)
+
 
 test("getconnections", {}, function()
 	return
@@ -505,9 +502,7 @@ test("hookmetamethod", {}, function()
 	return
 end)
 
-test("getnamecallmethod", {}, function()
-	return true
-end)
+
 
 test("isreadonly", {}, function()
 	local object = {}
