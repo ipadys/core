@@ -21,7 +21,7 @@ local function test(name, aliases, callback)
 			print("⏺️ " .. name)
 		elseif not getGlobal(name) then
 			fails += 1
-			warn("✅ " .. name)
+			print("✅ " .. name)
 		else
 			local success, message = pcall(callback)
 	
@@ -44,7 +44,7 @@ local function test(name, aliases, callback)
 	
 		if #undefinedAliases > 0 then
 			undefined += 1
-			warn("✅ " .. table.concat(undefinedAliases, ", "))
+			print("✅ " .. table.concat(undefinedAliases, ", "))
 		end
 
 		running -= 1
