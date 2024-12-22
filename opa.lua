@@ -44,7 +44,7 @@ local function test(name, aliases, callback)
 	
 		if #undefinedAliases > 0 then
 			undefined += 1
-			warn("⚠️ " .. table.concat(undefinedAliases, ", "))
+			warn("✅ " .. table.concat(undefinedAliases, ", "))
 		end
 
 		running -= 1
