@@ -470,7 +470,7 @@ test("fireclickdetector", {}, function()
 end)
 
 test("getcallbackvalue", {}, function()
-				return print("✅ WebSocket.connect")
+		return
 end)
 
 test("getconnections", {}, function()
@@ -544,7 +544,7 @@ test("hookmetamethod", {}, function()
 end)
 
 test("getnamecallmethod", {}, function()
-	return true
+	return 
 end)
 
 test("isreadonly", {}, function()
@@ -587,6 +587,7 @@ end)
 test("messagebox", {}, function()
 	return
 end)
+
 test("queue_on_teleport", {}, function()
 	return
 end)
