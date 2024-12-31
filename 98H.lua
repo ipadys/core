@@ -5,7 +5,6 @@ else
     print("[PSYCHO-SCRIPTS]: Script already running")
     return
 end
-
 local BackPack = {
 	BackPack = Instance.new("ScreenGui"),
 	Tooltip = Instance.new("Frame"),
