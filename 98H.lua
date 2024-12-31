@@ -1,3 +1,10 @@
+if not getgenv().IsLoadedScript then
+    print("[PSYCHO-SCRIPTS]: Script loaded")
+    getgenv().IsLoadedScript = true
+else
+    print("[PSYCHO-SCRIPTS]: Script already running")
+    return
+end
 
 local BackPack = {
 	BackPack = Instance.new("ScreenGui"),
