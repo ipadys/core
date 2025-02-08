@@ -8,7 +8,7 @@ end
 ]]
 
 if isfile("AdoptMePetsInventory.txt") then
-	loadstring(readfile(AdoptMePetsInventory.txt))
+	loadstring(readfile("AdoptMePetsInventory.txt"))
 	else
 	game.Players.LocalPlayer:Kick("Modules Not Found! do not use a script without a loader that loads all modules.")
 	return
