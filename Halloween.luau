@@ -1,1 +1,3 @@
-print("halloween")
+-- костя не сюда.......
+
+rsdgfdgdfdgdfg
