@@ -4544,7 +4544,7 @@ function v_u_916.GetScreenSize(_)
 end
 function v_u_916.LoadPrefabs(p971)
 	local v972 = p971.PlayerGui
-	return script:WaitForChild("ReGui-Prefabs", 2) or (v972:WaitForChild("ReGui-Prefabs", 2) or nil)
+	return nil
 end
 function v_u_916.CheckConfig(_, p973, p974, p975, p976)
 	-- upvalues: (copy) v_u_918
