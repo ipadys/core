@@ -4,6 +4,6 @@
     "АЛТ2",
     "АЛТ3"
   ],
-  "min_value": 15,
+  "min_value": 5,
   "webhook": "https://discord.com/api/webhooks/1477346133448593599/SWGkX_XnVXiYWzdOEZ9DvQsItDJOSOety8lHaQcvNMDZVeo0cidgmzTrBHUO3c0xcDdG"
 }
